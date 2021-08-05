@@ -1,4 +1,4 @@
-# TASK 2 sum of numbers and sum of numbers with a shift of +17
+# TASK_2 sum of numbers and sum of numbers with a shift of +17
 my_list = []
 for numb in range(1, 1001, 2):
     my_list.append(numb**3)
