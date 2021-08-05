@@ -1,4 +1,4 @@
-# TASK 1  breakdown some duration
+# TASK_1  breakdown some duration
 duration = int(input('Enter duration in seconds: '))
 if duration <= 0:
     print("your time's up")
@@ -18,7 +18,7 @@ else:
     else:
         print(seconds, 's')
 
-# TASK 1.1 breakdown some durations
+# TASK_1.1 breakdown some durations
 duration = input('Enter durations separated by a space (in seconds): ')
 duration_all = duration.split()
 for duration in duration_all:
