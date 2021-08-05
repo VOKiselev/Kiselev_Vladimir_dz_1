@@ -1,0 +1,24 @@
+# TASK 2 sum of numbers and sum of numbers with a shift of +17
+my_list = []
+for numb in range(1, 1001, 2):
+    my_list.append(numb**3)
+result = 0
+result_17 = 0
+for numb in my_list:
+    numb_17 = numb + 17
+    sum = numb % 10
+    sum_17 = numb_17 % 10
+    remainder = numb // 10
+    remainder_17 = numb_17 // 10
+    while remainder > 0:
+        sum += remainder % 10
+        remainder = remainder // 10
+    if sum % 7 == 0:
+        result += numb
+    while remainder_17 > 0:
+        sum_17 += remainder_17 % 10
+        remainder_17 = remainder_17 // 10
+    if sum_17 % 7 == 0:
+        result_17 += numb_17
+print('sum of matching numbers: ', result)
+print('sum of matching +17 numbers: ', result_17)
